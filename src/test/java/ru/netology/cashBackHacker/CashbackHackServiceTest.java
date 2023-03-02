@@ -30,8 +30,8 @@ class CashbackHackServiceTest {
     @Test
     void shouldCashback1001() {
         CashbackHackService service = new CashbackHackService();
-        int expected = 0;
-        int actual = service.remain(1001);
+        int expected = 999;
+        int actual = service.remain(5001);
         assertEquals(actual, expected);
 
 
