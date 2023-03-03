@@ -28,14 +28,13 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void shouldCashback1001() {
+    public void shouldCashback1000() {
         CashbackHackService service = new CashbackHackService();
-        int expected = 999;
-        int actual = service.remain(5001);
+        int expected = 0;
+        int actual = service.remain(1000);
         assertEquals(actual, expected);
 
 
     }
-
 
 }
